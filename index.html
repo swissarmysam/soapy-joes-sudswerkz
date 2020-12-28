@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Soapy Joe's Sudszwerkz</title>
+        <link rel="stylesheet" href="./styles/global.css">
+        <!-- Load sound library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.min.js" integrity="sha512-L6Z/YtIPQ7eU3BProP34WGU5yIRk7tNHk7vaC2dB1Vy1atz6wl9mCkTPPZ2Rn1qPr+vY2mZ9odZLdGYuaBk7dQ==" crossorigin="anonymous"></script>
+        <!-- Continuum is loaded from src/js -->
+        <!-- Load font awesome icons -->
+        <script src="https://kit.fontawesome.com/91da7a0d56.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="header">
+            <div class="header-title">
+                <img id="title-img" src="https://res.cloudinary.com/el1248e7h/image/upload/e_bgremoval,q_100/v1608308612/sudswerkz/full-title.png" alt="">
+            </div>
+        </div>
+        <!-- Left Adverts Column -->
+        <div class="left-col">
+            <div class="vacant ad ad1 custom-font"></div>
+            <div class="vacant ad ad2 custom-font"></div>
+            <div class="vacant ad ad3 custom-font"></div>
+            <div class="vacant ad ad4 custom-font"></div>
+        </div>
+        <!-- The menu container -->
+        <div class="canvas-wrapper">
+            <canvas height="600" width="600"></canvas>
+        </div>
+        <!-- The game container -->
+        <div id="bg-wrapper">
+            <div id="game-wrapper">
+                <div id="currency"></div> 
+                <div id="game">
+                    <div id="production"></div>
+                    <div id="management"></div>
+                </div>
+            </div>
+        </div>
+        <!-- The modal container - for game events -->
+        <div class="modal-container hidden">
+            <div class="modal">
+                <img src="https://res.cloudinary.com/el1248e7h/image/upload/v1608411086/sudswerkz/message.png" alt="" class="modal-bg">
+                <h3 class="event-title"></h3>
+                <p class="event-desc"></p>
+                <span class="event-effect"></span>
+                <button id="close">X CLOSE</button> 
+            </div>
+        </div>
+        <!-- Right Adverts Column -->
+        <div class="right-col">
+            <div class="vacant ad ad5 custom-font"></div>
+            <div class="vacant ad ad6 custom-font"></div>
+            <div class="vacant ad ad7 custom-font"></div>
+            <div class="vacant ad ad8 custom-font"></div>
+        </div>
+        <!-- Bottom bar content - patreon and game description -->
+        <div class="bottom">
+            <div class="patreon">
+                <a href="https://www.patreon.com/playpossum" target="_blank"><img src="https://res.cloudinary.com/el1248e7h/image/upload/v1608318124/sudswerkz/Digital-Patreon-Wordmark_FieryCoral.png" alt=""></a>
+                <p class="subscript">Support us on Patreon and get additional benefits!</p>
+            </div>
+            <div class="description">
+                <p>“It is the 1st of September 1953. The ‘Dirty First’ in these parts. The Soap Prohibition Era. The great unclean masses have kicked up a stink and now being fresh as a daisy is illegal. 
+                    You are Soapy Joe. The operator of Sudswerkz; a moonshiner producing soap for the black market. Your shack is set deep in the Appalachian backwoods.
+                    Demand is outstripping supply so you must upgrade your operation, increase your ‘Suds Count’ and keep soap production above zero. Try not to cause too much stink!”
+                    </p>
+            </div>
+        </div>
+        <!-- Website footer - link to twitter and presskit -->
+        <div class="footer">
+            <div class="social"><i class="fab fa-twitter"></i><a href="http://twitter.com/_playpossum" target="_blank"> @_playpossum</a></div>
+            <div class="press"><p>Presskit: <a href="https://playpossum.fun/press/" target="_blank">Play Possum</a></p></div>
+        </div>
+        <!-- Load modules and run game code -->
+        <script type="module" src="./modules/menu/menu.js"></script>
+        <script type="module" src="./modules/game/game.js"></script>
+    </body>
+</html>
